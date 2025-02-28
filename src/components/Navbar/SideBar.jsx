@@ -8,7 +8,7 @@ const SideBar = () => {
           to={el.path}
           key={el.id}
           // isActive cua NavLink
-          className={({isActive}) => isActive ? 'uppercase transition-all ease-in text-[#ffd700]' : 'uppercase transition-all ease-in hover:text-[#ffd700]'}
+          className={({isActive}) => isActive ? 'uppercase transition-all ease-in text-[#020216]' : 'uppercase transition-all ease-in hover:text-[#020216] hover:opacity-100 opacity-50'}
           >
             {el.text}
         </NavLink>

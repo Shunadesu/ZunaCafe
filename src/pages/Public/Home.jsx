@@ -5,7 +5,7 @@ const Home = () => {
 
   return (
     <Layout>
-      <div className="pt-8">
+      <div className="pt-2">
         <Banner />
       </div>
     </Layout>
