@@ -7,3 +7,5 @@ export {default as NavbarContent} from './Navbar/NavbarContent'
 export {default as SideBar} from './Navbar/SideBar'
 
 export {default as SearchInput} from './Input/SearchInput'
+
+export {default as Banner} from './Banner/Banner'

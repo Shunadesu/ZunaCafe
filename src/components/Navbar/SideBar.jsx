@@ -1,14 +1,18 @@
-import { Link } from "react-router-dom"
-import path from "../../ulities/path"
-
+import { NavLink } from "react-router-dom"
+import navdata from "../../ulities/data/navbar/navbardata" 
 const SideBar = () => {
   return (
     <div className="flex justify-around items-center">
-      <Link to={path.HOME}> HOME </Link>
-      <Link to={path.DRINK}> DRINK </Link>
-      <Link to={path.MENU}> MENU </Link>
-      <Link to={path.BLOGS}> BLOGS </Link>
-      <Link to={path.SOCIAL}> SOCIAL </Link>
+      {navdata.map(el => (
+        <NavLink 
+          to={el.path}
+          key={el.id}
+          // isActive cua NavLink
+          className={({isActive}) => isActive ? 'uppercase transition-all ease-in text-[#ffd700]' : 'uppercase transition-all ease-in hover:text-[#ffd700]'}
+          >
+            {el.text}
+        </NavLink>
+      ))}
     </div>
   )
 }

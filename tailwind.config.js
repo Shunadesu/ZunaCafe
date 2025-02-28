@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#ffd700",  // Gold
-        secondary: "#020216", // Dark Blue
+        day: "#ffd700",  // Gold
+        night: "#020216", // Dark Blue
       },
       
     },

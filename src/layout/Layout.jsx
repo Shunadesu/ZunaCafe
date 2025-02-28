@@ -1,18 +1,15 @@
 import { Suspense } from "react";
-import { Loader, Navbar } from "../components";
+import { Loader } from "../components";
 import { Toaster } from "react-hot-toast";
 import PropTypes from "prop-types";
 
 const Layout = ({ children }) => {
   return (
     <Suspense fallback={<Loader />}>
-      <div className="min-h-screen">
-        <main className="px-32 w-full">
-        <Navbar />
-            <div className="flex flex-col w-full">
+      <div className="m-auto justify-center flex items-center w-full">
+            <div className="flex flex-col w-full m-auto py-4">
               {children}
             </div>  
-        </main>
       </div>
       <Toaster />
     </Suspense>

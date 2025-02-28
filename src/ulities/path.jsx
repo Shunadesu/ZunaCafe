@@ -1,7 +1,7 @@
 const path = {
   //common path
-  PUBLIC: "",
-  HOME: "/",
+  PUBLIC: "/",
+  HOME: "",
   LOGIN: "/login",
   REGISTER: "/register",
   FORGOTPASSWORD: "/forgotpassword",
