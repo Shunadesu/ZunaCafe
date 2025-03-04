@@ -1,4 +1,4 @@
-import { Banner } from "../../components"
+import { Banner, ProductCategories } from "../../components"
 import Layout from "../../layout/Layout"
 
 const Home = () => {
@@ -7,6 +7,8 @@ const Home = () => {
     <Layout>
       <div className="pt-2">
         <Banner />
+
+        <ProductCategories />
       </div>
     </Layout>
   )

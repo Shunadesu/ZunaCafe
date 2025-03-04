@@ -4,7 +4,7 @@ import SideBar from "./SideBar"
 const Navbar = () => {
   return (
     <div className="w-full flex flex-col gap-4">
-      <div className="flex sticky inset-0 min-h-[100px] items-center">
+      <div className="flex inset-0 h-[100px] items-center bg-white z-1">
         <NavbarContent />
       </div>
 

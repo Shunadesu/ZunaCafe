@@ -62,3 +62,12 @@ ol {
   75% { background-position: 50% 50%; }
   100% { background-position: 0% 50%; }
 }
+
+
+canvas {
+  cursor: grab;
+}
+
+canvas:active {
+  cursor: grabbing;
+}
