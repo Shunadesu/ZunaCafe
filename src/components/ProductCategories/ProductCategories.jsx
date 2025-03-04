@@ -1,6 +1,7 @@
+import { NavLink } from 'react-router-dom';
 import { apiGetCategories } from '../../apis/app';
 import { useState, useEffect } from 'react';
-
+import {createSlug} from '../../ulities/helper'
 const ProductCategories = () => {
     const [categories, setCategories] = useState([]);
     const [loading, setLoading] = useState(true); // Loading state
@@ -27,13 +28,14 @@ const ProductCategories = () => {
     if (error) return <div>Error: {error}</div>;
 
     return (
-        <div>
-            <h2>Các loại đồ uống tại Zuna đâyyyy</h2>
-            <ul>
-                {categories.map((category) => (
-                    <li key={category.id}>{category.title}</li>
+        <div className='grid gap-4 grid-cols-2 items-center'>
+                {categories?.map((el) => (
+                    <NavLink 
+                        to={createSlug(el.title)} 
+                        key={createSlug(el.title)}
+                        className='border w-full h-[150px] justify-self-center flex items-center justify-center rounded-2xl cavieat-font text-[32px]'
+                    >{el.title}</NavLink>
                 ))}
-            </ul>
         </div>
     );
 };
