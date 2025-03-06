@@ -1,4 +1,4 @@
-import { store } from "./app/store"
+import { store } from "./store/redux"
 import { ZunaCafe } from "./components"
 import { Provider } from 'react-redux'
 // import { BrowserRouter } from "react-router-dom"

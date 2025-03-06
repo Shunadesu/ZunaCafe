@@ -1,8 +1,16 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import path from "../ulities/path"
 import { Fail, Home, Login, Public } from "../pages"
+import {getCategories} from '../store/asyncActions'
+import { useDispatch } from "react-redux";
+import { useEffect } from "react";
 
 const ZunaCafe = () => {
+  const dispatch = useDispatch()
+  useEffect(() => {
+    dispatch(getCategories())
+  },[dispatch])
+
   return (
     <Router>
       <Routes>
